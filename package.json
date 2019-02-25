@@ -1,0 +1,16 @@
+{
+  "name": "node-python-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "env:create": "python3 -m venv python-env",
+    "env:activate": "source ./python-env/bin/activate",
+    "env:deactivate": "deactivate",
+    "env:deps": "pip install -r requirements.txt",
+    "start": "node app/index.js"
+  },
+  "keywords": [],
+  "author": "monochromer <monochromer@mail.ru>",
+  "license": "ISC"
+}
