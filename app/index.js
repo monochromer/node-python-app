@@ -23,7 +23,7 @@ async function onRequest(req, res) {
   })
   )
   .then(() => res.end())
-  .catch(e => res.end(e))
+  .catch(e => res.end(e.message))
 }
 
 server
