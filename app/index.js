@@ -13,7 +13,7 @@ async function onRequest(req, res) {
     ['python', ['--version']],
     ['pip', ['--version']],
     ['pyftsubset', ['--help']],
-    ['ffmpeg', '-version']
+    ['ffmpeg', ['-version']]
   ];
 
   Promise.all(apps.map(app => {
