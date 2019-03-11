@@ -12,7 +12,8 @@ async function onRequest(req, res) {
   const apps = [
     ['python', ['--version']],
     ['pip', ['--version']],
-    ['pyftsubset', ['--help']]
+    ['pyftsubset', ['--help']],
+    ['ffmpeg', '-version']
   ];
 
   Promise.all(apps.map(app => {
